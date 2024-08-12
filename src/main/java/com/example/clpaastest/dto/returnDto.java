@@ -9,6 +9,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public class returnDto {
     private String userId;
+    private String text;
     private Boolean status;
 
 }
