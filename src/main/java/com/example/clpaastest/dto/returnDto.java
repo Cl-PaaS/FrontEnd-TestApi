@@ -8,7 +8,7 @@ import lombok.Getter;
 @Builder
 @AllArgsConstructor
 public class returnDto {
-    private Long userId;
+    private String userId;
     private Boolean status;
 
 }

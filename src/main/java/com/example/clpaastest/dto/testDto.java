@@ -10,7 +10,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public class testDto {
 
-    private Long userId;
+    private String userId;
     private String text;
 
 
