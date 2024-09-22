@@ -21,12 +21,22 @@ public class testController {
     public testController(testService testservice) {
         this.testservice = testservice;
     }
-    @PostMapping("/message")
-    public ResponseEntity testApi(@RequestBody testDto testdto){
+
+    @PostMapping("/message1")
+    public ResponseEntity testApi1(@RequestBody testDto testdto){
         returnDto returndto = testservice.testService(testdto);
-        //return 한다.
         return ResponseEntity.status(HttpStatus.OK).body(returndto);
     }
 
+    @PostMapping("/message2")
+    public ResponseEntity testApi2(@RequestBody testDto testdto){
+        returnDto returndto = testservice.testService(testdto);
+        return ResponseEntity.status(HttpStatus.OK).body(returndto);
+    }
 
+    @PostMapping("/message3")
+    public ResponseEntity testApi3(@RequestBody testDto testdto){
+        returnDto returndto = testservice.testService(testdto);
+        return ResponseEntity.status(HttpStatus.OK).body(returndto);
+    }
 }
